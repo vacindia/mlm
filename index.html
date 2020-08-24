@@ -32,8 +32,8 @@
             </ul>
             <form class="form-inline mt-2 mt-md-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="User ID" aria-label="User ID">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="button"><i class="fa fa-sign-in"></i> LOGIN</button>
-                &nbsp;<button class="btn btn-outline-light my-2 my-sm-0" type="button"><i class="fa fa-user"></i> REGISTER</button>
+                <button class="btn btn-outline-light my-2 my-sm-0" type="button" ><i class="fa fa-sign-in"></i> LOGIN</button>
+                &nbsp;<button class="btn btn-outline-light my-2 my-sm-0" type="button" ><i class="fa fa-user"></i> REGISTER</button>
             </form>
         </div>
     </nav>
@@ -41,7 +41,7 @@
 
 <main role="main">
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom: 0;">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -79,6 +79,7 @@
                 </div>
             </div>
         </div>
+
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -89,12 +90,24 @@
         </a>
     </div>
 
+    <div class="alert alert-primary" style="border-radius: 0;">
+        <div class="container">
+            <div class="alert-icon">
+                <i class="fa fa-check-circle"></i>&nbsp;<b>Recent Withdrawals:</b>
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+            </button>
+            <marquee>Manish Kumar just withdrawal ₹2500, Suresh Kumar just withdrawal ₹2000, Sachin just withdrawal ₹1000, Mahesh just withdrawal ₹1200, Kanchan just withdrawal ₹12500, Suresh just withdrawal ₹500</marquee>
+        </div>
+    </div>
+
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <div class="container marketing" style="margin-top: 50px;">
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
@@ -164,6 +177,7 @@
         <p>&copy; 2020 XYZ &middot; <a href="#">Privacy</a> &middot; <a href="#">T&Cs</a></p>
     </footer>
 </main>
+</body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
 </html>
